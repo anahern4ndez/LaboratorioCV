@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "pug": "^2.0.3",
+    "save": "^2.3.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "mode_nodule/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000
+    }
+  }
+}
